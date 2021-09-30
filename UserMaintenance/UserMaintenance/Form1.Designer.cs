@@ -30,9 +30,7 @@ namespace UserMaintenance
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -46,15 +44,6 @@ namespace UserMaintenance
             this.listBox1.Size = new System.Drawing.Size(331, 329);
             this.listBox1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(350, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -63,13 +52,6 @@ namespace UserMaintenance
             this.label2.Size = new System.Drawing.Size(70, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(506, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 31);
-            this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
@@ -95,9 +77,7 @@ namespace UserMaintenance
             this.ClientSize = new System.Drawing.Size(764, 360);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -109,9 +89,7 @@ namespace UserMaintenance
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Button button1;
     }
