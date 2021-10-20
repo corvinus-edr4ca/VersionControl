@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,8 @@ namespace Week05_VaR
         List<Tick> Ticks;
 
         List<PortfolioItem> Portfolio = new List<PortfolioItem>();
+
+        List<decimal> nyereségekRendezve = new List<decimal>();
 
         public Form1()
         {
@@ -39,11 +42,13 @@ namespace Week05_VaR
                 Console.WriteLine(i + " " + ny);
             }
 
-            var nyereségekRendezve = (from x in Nyereségek
+            nyereségekRendezve = (from x in Nyereségek
                                       orderby x
                                       select x)
                                         .ToList();
             MessageBox.Show(nyereségekRendezve[nyereségekRendezve.Count() / 5].ToString());
+
+            
         }
 
         public void CreatePortfolio()
@@ -66,6 +71,24 @@ namespace Week05_VaR
                 value += (decimal)last.Price * item.Volume;
             }
             return value;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.FileName = "nyeresegek";
+            sfd.Filter = "Text Files | *.txt";
+            if (sfd.ShowDialog() != DialogResult.OK) return;
+            using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
+            {
+                sw.WriteLine("Időszak Nyereség");
+                int counter = 1;
+                foreach (var item in nyereségekRendezve)
+                {
+                    sw.WriteLine(counter + ". " + item);
+                    counter++;
+                }
+            }
         }
     }
 }
