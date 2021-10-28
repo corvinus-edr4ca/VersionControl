@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using System.Xml;
 using Week06_Web.Entities;
 using Week06_Web.MnbServiceReference;
@@ -24,6 +25,7 @@ namespace Week06_Web
             InitializeComponent();
             mnbCall();
             getXml();
+            diagram();
 
             dataGridView1.DataSource = rates;
         }
@@ -62,6 +64,25 @@ namespace Week06_Web
                     rate.Value = value / unit;
                 }
             }
+        }
+
+        public void diagram()
+        {
+            chart1.DataSource = rates;
+
+            var series = chart1.Series[0];
+            series.ChartType = SeriesChartType.Line;
+            series.XValueMember = "Date";
+            series.YValueMembers = "Value";
+            series.BorderWidth = 2;
+
+            var legend = chart1.Legends[0];
+            legend.Enabled = false;
+
+            var chartArea = chart1.ChartAreas[0];
+            chartArea.AxisX.MajorGrid.Enabled = false;
+            chartArea.AxisY.MajorGrid.Enabled = false;
+            chartArea.AxisY.IsStartedFromZero = false;
         }
     }
 }
