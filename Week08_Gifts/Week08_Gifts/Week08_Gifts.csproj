@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstactions\IToyFactory.cs" />
     <Compile Include="Abstactions\Toy.cs">
       <SubType>Component</SubType>
     </Compile>
