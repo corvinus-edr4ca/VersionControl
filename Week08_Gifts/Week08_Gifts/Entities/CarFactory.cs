@@ -8,11 +8,11 @@ using Week08_Gifts.Abstractions;
 
 namespace Week08_Gifts.Entities
 {
-    public class Ballfactory : IToyFactory
+    class CarFactory : IToyFactory
     {
         public Toy CreateNew()
         {
-            return new Ball();
+            return new Car();
         }
     }
 }
