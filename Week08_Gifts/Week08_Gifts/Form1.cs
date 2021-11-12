@@ -91,5 +91,14 @@ namespace Week08_Gifts
             if (colorPicker.ShowDialog() != DialogResult.OK) return;
             button.BackColor = colorPicker.Color;
         }
+
+        private void presentButton_Click(object sender, EventArgs e)
+        {
+            Factory = new PresentFactory
+            {
+                RibbonColor = colorButton2.BackColor,
+                BoxColor = colorButton3.BackColor
+            };
+        }
     }
 }

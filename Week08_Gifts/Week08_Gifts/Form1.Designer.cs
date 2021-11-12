@@ -37,6 +37,9 @@ namespace Week08_Gifts
             this.carButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.colorButton = new System.Windows.Forms.Button();
+            this.presentButton = new System.Windows.Forms.Button();
+            this.colorButton2 = new System.Windows.Forms.Button();
+            this.colorButton3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -63,7 +66,7 @@ namespace Week08_Gifts
             // 
             this.ballButton.Location = new System.Drawing.Point(12, 12);
             this.ballButton.Name = "ballButton";
-            this.ballButton.Size = new System.Drawing.Size(163, 50);
+            this.ballButton.Size = new System.Drawing.Size(163, 84);
             this.ballButton.TabIndex = 0;
             this.ballButton.Text = "BALL";
             this.ballButton.UseVisualStyleBackColor = true;
@@ -82,7 +85,7 @@ namespace Week08_Gifts
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(350, 12);
+            this.label1.Location = new System.Drawing.Point(519, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 25);
             this.label1.TabIndex = 2;
@@ -92,18 +95,53 @@ namespace Week08_Gifts
             // 
             this.colorButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.colorButton.ForeColor = System.Drawing.Color.Red;
-            this.colorButton.Location = new System.Drawing.Point(12, 69);
+            this.colorButton.Location = new System.Drawing.Point(12, 102);
             this.colorButton.Name = "colorButton";
-            this.colorButton.Size = new System.Drawing.Size(163, 40);
+            this.colorButton.Size = new System.Drawing.Size(163, 74);
             this.colorButton.TabIndex = 3;
             this.colorButton.UseVisualStyleBackColor = false;
             this.colorButton.Click += new System.EventHandler(this.colorButton_Click);
+            // 
+            // presentButton
+            // 
+            this.presentButton.Location = new System.Drawing.Point(350, 12);
+            this.presentButton.Name = "presentButton";
+            this.presentButton.Size = new System.Drawing.Size(163, 84);
+            this.presentButton.TabIndex = 4;
+            this.presentButton.Text = "PRESENT";
+            this.presentButton.UseVisualStyleBackColor = true;
+            this.presentButton.Click += new System.EventHandler(this.presentButton_Click);
+            // 
+            // colorButton2
+            // 
+            this.colorButton2.BackColor = System.Drawing.Color.Yellow;
+            this.colorButton2.ForeColor = System.Drawing.Color.Red;
+            this.colorButton2.Location = new System.Drawing.Point(350, 102);
+            this.colorButton2.Name = "colorButton2";
+            this.colorButton2.Size = new System.Drawing.Size(163, 36);
+            this.colorButton2.TabIndex = 5;
+            this.colorButton2.UseVisualStyleBackColor = false;
+            this.colorButton2.Click += new System.EventHandler(this.colorButton_Click);
+            // 
+            // colorButton3
+            // 
+            this.colorButton3.BackColor = System.Drawing.Color.Lime;
+            this.colorButton3.ForeColor = System.Drawing.Color.Red;
+            this.colorButton3.Location = new System.Drawing.Point(350, 140);
+            this.colorButton3.Name = "colorButton3";
+            this.colorButton3.Size = new System.Drawing.Size(163, 36);
+            this.colorButton3.TabIndex = 6;
+            this.colorButton3.UseVisualStyleBackColor = false;
+            this.colorButton3.Click += new System.EventHandler(this.colorButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1488, 960);
+            this.Controls.Add(this.colorButton3);
+            this.Controls.Add(this.colorButton2);
+            this.Controls.Add(this.presentButton);
             this.Controls.Add(this.colorButton);
             this.Controls.Add(this.carButton);
             this.Controls.Add(this.label1);
@@ -125,6 +163,9 @@ namespace Week08_Gifts
         private System.Windows.Forms.Button carButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button colorButton;
+        private System.Windows.Forms.Button presentButton;
+        private System.Windows.Forms.Button colorButton2;
+        private System.Windows.Forms.Button colorButton3;
     }
 }
 
