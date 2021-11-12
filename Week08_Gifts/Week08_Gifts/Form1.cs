@@ -13,7 +13,7 @@ namespace Week08_Gifts
 {
     public partial class Form1 : Form
     {
-        private List<Ball> _balls = new List<Ball>();
+        private List<Toy> _balls = new List<Toy>();
 
         private Ballfactory _factory;
         public Ballfactory Factory
