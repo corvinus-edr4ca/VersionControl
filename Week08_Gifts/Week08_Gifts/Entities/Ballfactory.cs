@@ -8,7 +8,7 @@ namespace Week08_Gifts.Entities
 {
     public class Ballfactory
     {
-        public Toy CreateNew()
+        public Ball CreateNew()
         {
             return new Ball();
         }

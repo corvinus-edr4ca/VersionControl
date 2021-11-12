@@ -13,7 +13,7 @@ namespace Week08_Gifts
 {
     public partial class Form1 : Form
     {
-        private List<Toy> _balls = new List<Toy>();
+        private List<Ball> _balls = new List<Ball>();
 
         private Ballfactory _factory;
         public Ballfactory Factory
@@ -41,7 +41,7 @@ namespace Week08_Gifts
             var maxPosition = 0;
             foreach (var ball in _balls)
             {
-                ball.MoveBall();
+                ball.MoveToy();
                 if (ball.Left<maxPosition)
                 {
                     maxPosition = ball.Left;
