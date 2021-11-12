@@ -62,7 +62,9 @@ namespace Week08_Gifts
 
         private void ballButton_Click(object sender, EventArgs e)
         {
-            Factory = new Ballfactory();
+            Factory = new Ballfactory {
+                BallColor = colorButton.BackColor
+            };
         }
 
         private void carButton_Click(object sender, EventArgs e)
