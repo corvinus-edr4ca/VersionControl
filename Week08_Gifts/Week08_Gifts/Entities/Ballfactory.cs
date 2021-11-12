@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Week08_Gifts.Entities
 {
-    class Ballfactory
+    public class Ballfactory
     {
-        public Ball CreateBall()
+        public Ball CreateNew()
         {
             return new Ball();
         }
