@@ -1,0 +1,11 @@
+-<MNBExchangeRates>
+	-<Day date="2020-06-20">
+		<Rate unit="1" curr="EUR">300</Rate>
+	<Day>
+	-<Day date="2020-06-29">
+		<Rate unit="1" curr="EUR">310</Rate>
+	<Day>
+	-<Day date="2020-06-28">
+		<Rate unit="1" curr="EUR">320</Rate>
+	<Day>
+</MNBExchangeRates>
