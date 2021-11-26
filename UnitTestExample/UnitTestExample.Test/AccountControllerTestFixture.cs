@@ -8,7 +8,7 @@ using UnitTestExample.Controllers;
 
 namespace UnitTestExample.Test
 {
-    class AccountControllerTestFixture
+    public class AccountControllerTestFixture
     {
         [
             Test,
@@ -19,7 +19,6 @@ namespace UnitTestExample.Test
          ]
         public void TestValidateEmail(string email, bool expectedResult)
         {
-
             //Arrange
             var accountController = new AccountController();
 
@@ -28,7 +27,6 @@ namespace UnitTestExample.Test
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
-
         }
     }
 }
