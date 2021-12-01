@@ -64,7 +64,7 @@ namespace Week09_MicroSimulation
 
         public void DisplayResults()
         {
-            richTextBox1.Text += (String.Format("Szimulációs év: {0}\n\tFiúk: {1}\n\tLányok: {2}\n\n", currentYear, currentMales, currentFemales));
+            richTextBox1.Text += (String.Format("Szimulációs év: {0}\n\tFiúk:\t{1}\n\tLányok:\t{2}\n\n", currentYear, currentMales, currentFemales));
         }
 
         public void SimStep(int year, Person person)
