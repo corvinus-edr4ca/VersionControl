@@ -23,7 +23,7 @@ namespace Week09_MicroSimulation
         public Form1()
         {
             InitializeComponent();
-            Population = GetPopulation(@"C:\Temp\nép.csv");
+            Population = GetPopulation(@"C:\Temp\nép-teszt.csv");
             BirthProbabilities = GetBirthProbabilities(@"C:\Temp\születés.csv");
             DeathProbabilities = GetDeathProbabilities(@"C:\Temp\halál.csv");
 
@@ -42,7 +42,7 @@ namespace Week09_MicroSimulation
                               where x.Gender == Gender.Female && x.IsAlive
                               select x).Count();
 
-            Console.WriteLine(string.Format("Év:{0} Fiúk:{1} Lányok:{2}", year, nbrOfFemales, nbrOfMales));
+            Console.WriteLine(string.Format("Év:{0} Fiúk:{1} Lányok:{2}", year, nbrOfMales, nbrOfFemales));
             }
 
         }
