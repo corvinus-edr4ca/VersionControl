@@ -39,9 +39,9 @@ namespace Week10_WorldsHardestGame
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 31);
+            this.label1.Size = new System.Drawing.Size(163, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "1. generáció";
             // 
             // button1
             // 
