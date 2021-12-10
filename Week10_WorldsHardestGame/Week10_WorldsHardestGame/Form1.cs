@@ -23,6 +23,9 @@ namespace Week10_WorldsHardestGame
 
             ga = gc.ActivateDisplay();
             this.Controls.Add(ga);
+
+            gc.AddPlayer();
+            gc.Start(true);
         }
     }
 }
